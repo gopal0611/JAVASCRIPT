@@ -1,0 +1,179 @@
+5:11 [ Setting up environment ] 
+1 The difference between .js and .txt file is that .js file can be run
+2 Environment Node js/ deno js (in past html was needed but not now)
+
+16:53 [ Git hub ]
+1 code 
+    ctrl  + shft + p add dev configuration file
+
+27:14 [ let var const ]
+
+1 variable declaring best practices 
+
+2 const variable can't be modified 
+
+3 console.table
+
+4 js used to not work on scope
+
+5 prefer not use var
+
+6 variable with out initializing is undefined
+
+
+43:54 [ data types ECMA standard ]
+
+1 use strict 
+
+2 alert (" ")
+
+3 only code execution is not but goal should always be readable (prettier)
+
+4 mdn doc tc39
+
+5 data types
+
+   - number
+
+   - bugInt
+
+   - string
+
+   - boolean
+
+   - null
+
+   - undefined 
+
+   - symbol 
+
+Null is object
+
+
+Object
+
+
+1:01:55 [ data type conversation ]
+
+
+- type of normal = lowercase
+
+- "33" => 33 number
+
+- "33abc" => NaN 
+
+- true => 1
+
+- false => 0
+
+- 1  , " "  => true
+
+- 0 , " " , "abc" => false
+
+
+1:14:46 [ why string to number]
+
+Arithmetic Operation
+
+1 + "2" => 12
+
+3 + 3 - 3 * 3 / 3 +( 2 + 2 )
+
++true  => 1
+
++""  => 0
+
+Prefix increment
+
+Postfix increment 
+
+
+1:29:49 [ comparison of data type ]
+
+>
+
+<
+
+<=
+
+>=
+
+==
+
+===
+
+(Don't compare different data types)
+
+null > 0
+
+null< 0
+
+null <= 0 => true bcz null is converted to 0
+
+[Summary]
+
+- Comparing same datatypes are easy to predict 
+
+- Don't compare different data types
+
+
+
+1:38:38 [ data type summary ]
+
+- interview related questions 
+
+- primitive and non primitive (call by value, call by reference)
+
+- primitive:7 (call by value)
+
+- string, number, bolean, null, undefined, symbol , BigInt
+
+- non primitive:3 (call by reference)
+
+- arrays, object, function 
+
+
+- dynamically type vs statically type
+
+- js is dynamically typed
+
+- const id = Symbol("123")
+
+- const anotherId = Symbol("123")
+
+- id === anotherId => false
+
+- array, object, function overview 
+
+- typeof datatyped is available on documentation 
+
+
+01:56:40  -  [ stack and heap memory ]
+- Primitive data type goes to Stack we get a copy of that value.
+- Non-Primitive data type goes to Heap we get refrence of that value.  
+
+02:06:34 [ Strings in JS ]
+- strings can be donated by ' or "
+- to concatenate we can use 
+- back tick (sting interpolations)
+e.g `hello ${name}`
+- sting is object but it has length property
+- it can be access as
+e.g stringName[0]
+- stringName._proto_
+- stringName.toUpperCase()
+- stringName.charAt()
+- stringName.indexAt()
+- stringName.substing(0,4) can have -ve value
+- stringName.slice(-7,4) can have -ve value
+- stringName.trim() , .trimStart(), .trimEnd()
+- stringName.replace('what to search', 'what to replace with')
+- stringName.includes('name')
+- stringName.split('sepater','limit')
+- search for small() yourself
+
+
+
+(Attention: These are my personal notes.
+
+Everything taught by sir is not here I only note things that I find need of and you can take benefit from it as you like. 😊)
