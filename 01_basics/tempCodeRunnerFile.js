@@ -1,7 +1,2 @@
-let score = "Gopal";
-
-// console.log(typeof score);
-// console.log(typeof score);
-
-// let valueInNumber = Number(score)
-// console.log(valueInNumber);
+onsole.log("2" > 1);
+// console.log("02" > 1); 
