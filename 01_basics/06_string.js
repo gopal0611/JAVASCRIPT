@@ -17,23 +17,19 @@ const gameName = new String("gopal-xd");
 // const newStr = gameName.substring(0, 4);
 // console.log(newStr);
 
-
 // const anotherString = gameName.slice(-3,4)
 
 // console.log(anotherString);
 
-const newStringOne = "   gopal   "
+const newStringOne = "   gopal   ";
 console.log(newStringOne);
 console.log(newStringOne.trim());
 
+const url = "hhtps://akapain.xzy/pain%20akdd";
 
-const url = "hhtps://akapain.xzy/pain%20akdd"
+console.log(url.replace("%20", "-"));
 
-console.log(url.replace('%20', '-'))
+console.log(url.includes("pain"));
+console.log(url.includes("gopal"));
 
-console.log(url.includes('pain'))
-console.log(url.includes('gopal'))
-
-
-
-console.log(gameName.split('-'));
+console.log(gameName.split("-"));
