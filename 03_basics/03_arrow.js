@@ -15,8 +15,35 @@ const user = {
 
 // console.log(this);
 
-function chai(){
+// function chai(){
+//     let username= "Gopal"
+//     console.log(this.username);
+// }
+// chai()
+
+
+// const chai = function(){
+//     let username= "Gopal"
+//     console.log(this.username);
+// }
+
+
+
+const chai = () => {
     let username= "Gopal"
     console.log(this.username);
 }
-chai()
+// chai()
+
+// ************************ arrow function ************************
+
+// const addTwo = (num1, num2) => {
+//     return num1 + num2
+// }
+// const addTwo = (num1, num2) =>  num1 + num2
+
+// const addTwo = (num1, num2) =>  (num1 + num2)
+
+const addTwo = (num1, num2) => ({username: "hitesh"})
+
+console.log(addTwo(2,4));
