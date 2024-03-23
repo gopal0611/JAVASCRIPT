@@ -69,26 +69,40 @@
     // target , toElement , srcElement , currentTarget,
     // clientX, clientV, screenX, keyCode
 
-    document.getElementById("images").addEventListener(
-      "click",
-      function(e) {
-        console.log("Click inside the ul");
-      },
-      true
-    );
-    document.getElementById("owl").addEventListener(
-      "click",
-      function(e) {
-        console.log("Owl Clicked");
-        e.stopPropagation();
-      },
-      true
-    ); //for bubbling false And for capturing true
+    // document.getElementById("images").addEventListener(
+    //   "click",
+    //   function(e) {
+    //     console.log("Click inside the ul");
+    //   },
+    //   true
+    // );
+    // document.getElementById("owl").addEventListener(
+    //   "click",
+    //   function(e) {
+    //     console.log("Owl Clicked");
+    //     e.stopPropagation();
+    //   },
+    // true
+    // ); //for bubbling false And for capturing true
 
-    document.getElementById('google').addEventListener('click',function(e){
-        e.preventDefault();
-        e.stopPropagation()
-        console.log("google clicked");
-    }, false)
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log("google clicked");
+    // }, false)
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+    
+        
+    })
+    
+    //removeIt.parentNode.removeChild(removeIt)
+</script>
   </script>
 </html>
